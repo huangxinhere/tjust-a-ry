@@ -1,0 +1,33 @@
+#include<stdio.h>//case后面只是常量表达式，不能有变量；想办法常量表示不同情况 
+
+int main()
+{
+	int p,s,w,c;
+	float d;
+	
+	printf("input exact data to p,s,w: ");//p为基本运费，s为路程，w为重量，d为折扣
+	scanf("%d%d%d%d",&p,&s,&w);
+	
+	if(s<250) c=1;
+	if(250<=s&&s<500) c=2;
+	if(500<=s&&s<1000) c=3;
+	if(1000<=s&&s<2000) c=4;
+	if(2000<=s&&s<3000) c=5;
+	if(3000<=s) c=6;
+		
+
+	switch(c)//老忘记要加{} 
+	{
+	case 1:d=0;break;
+	case 2:d=0.02;break;
+	case 3:d=0.05;break;
+	case 4:d=0.08;break;
+	case 5:d=0.1;break;
+	case 6:d=0.15;break;
+	default :printf("f is an error!\n");break; 
+    }
+	printf("f=%d\n",p*s*w*(1-d));
+	
+	return 0;
+    
+ } 

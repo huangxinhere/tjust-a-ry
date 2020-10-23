@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 long square (int p);
-long factional(int q);//不能嵌套定义，就在主函数前定义 
+long factorial(int q);//不能嵌套定义，就在主函数前定义 
 
 int main()//调用函数中的数据变量与定义函数内容的变量不同，理解成a(b)得出的是由b计算出来的数值 
 {         //而定义只是说明函数关系——所以return的是最后结果 
@@ -27,7 +27,7 @@ long square(int p)//后不要加；/要说明数据类型
 	  
  	return r;//返回最终值，再回去确定数据类型 
  	
- }
+ }//squre在前，把f也弄进去了；要是f在前，i可能就用到s 
  
 long factorial(int q )
  {

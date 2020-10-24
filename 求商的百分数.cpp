@@ -2,9 +2,9 @@
 
 int main()
 {
-	long int i ;//首先要根据要求确定数据类型 
-	int bonus1,bonus1,bonus1,bonus1,bonus1,bonus1,
-	scanf("%ld",%i);//学会快速复制格式 
+	long int i,bonus ;//首先要根据要求确定数据类型 
+	long int bonus1,bonus2,bonus3,bonus4,bonus5; 
+	scanf("%ld",&i);//学会快速复制格式 
 	
 	bonus1=100000*0.1;//阶梯式，每阶段的算法都要考虑(看清题目)，重复的可用变量代替 
 	bonus2=bonus1+100000*0.75;//比switch好，少打一些 

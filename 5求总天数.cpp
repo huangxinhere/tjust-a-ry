@@ -4,7 +4,7 @@ int main()
 {
 	int day,month,year,sum,leap;
 	printf("\nplease input year,month,day\n");
-	scanf("%d,%d,%d",year,month,day);
+	scanf("%d,%d,%d",&year,&month,&day);// 缺了&&&地址符然后出现了访问内存错误的情况
 	
 	switch (month)
 	{

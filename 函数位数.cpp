@@ -21,7 +21,7 @@
 	void printf_bits(unsigned x)
 	{
 		int i;//下面括号内为空，无参数 
-		for (i=int_bits()-1;i>=0;i--)
+		for (i=int_bits()-1;i>=0;i--)//i是位数 ，因为int-count -是位数 
 		{
 			putchar (((x>>i)&1u)?'1':'0' );//错误：printf("%d\n",(x&1u)?1:0;);
 		 }                                 //区别得到值和输出字符 

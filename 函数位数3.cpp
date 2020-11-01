@@ -47,7 +47,7 @@ unsigned reset_n(unsigned x,unsigned pos,unsigned n)
 	}
 	i=i-1;
 	
-	return (x&(i<<pos));
+	return (x&~(i<<pos));// 
 }
 
 unsigned inverse_n(unsigned x,unsigned pos,unsigned n)
